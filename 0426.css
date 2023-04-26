@@ -1,0 +1,188 @@
+@charset "UTF-8";
+* {
+  font-family: 微軟正黑體;
+  font-size: 20px;
+  margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    }
+
+html, body {
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background-color: #07bbed;
+}
+
+.box {
+  height: 600px;
+  width: 500px;
+  background-color: #fff;
+}
+
+.top {
+  height: 500px;
+  width: 400px;
+  background-image: url(./images/01.jpg);
+  background-size: cover;
+  position: relative;
+  margin-left:50px;
+}
+.top1 {
+  height: 400px;
+  background-image: url(./images/02.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.top2 {
+  height: 400px;
+  background-image: url(./images/03.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.top3 {
+  height: 400px;
+  background-image: url(./images/04.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.top4 {
+  height: 400px;
+  background-image: url(./images/06.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.cirbutton{
+  width:90px ;
+  height: 90px;
+  background-image:url(./images/05.png) ;
+  background-size: cover;
+  border-radius: 50%;   
+  position: absolute;
+  left: -10px;
+  bottom: -95px;
+}
+.bottom {
+  height: 200px;
+}
+.bottom ul {
+  padding-top: 20px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.title {
+  font-size: 25px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.buttons {
+  margin-top: 9px;
+  margin-left:180px;
+}
+
+.buttons .btn {
+  display: inline-block;
+  padding: 5px 20px;
+  letter-spacing: 2px;
+}
+
+.btnWebsite {
+  background-color: #88a98c;
+  color: white;
+  transition: 0.5s;
+}
+
+.btnWebsite:hover {
+  background-color: #88a98c;
+}
+
+
+.swiper {
+  width: 500px;
+  height: 600px;
+}
+
+.swiper-slide {
+  position: relative;
+  background-color: #000;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper button {
+  width: 50px;
+  height: 50px;
+  color: #070707;
+  background: transparent;
+  border: solid;
+  outline: none;
+  transition: opacity 0.25s;
+}
+
+.swiper button:hover {
+  opacity: 0.8;
+}
+.swiper button::before,
+.swiper button::after {
+  font-size: 24px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+}
+
+.swiper-description {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  isolation: isolate;
+  padding: 50px 25px 25px;
+  color: #fff;
+}
+
+.swiper-description::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.8) 50%);
+}
+
+.swiper-description h2 {
+  font-size: 42px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.swiper-description p {
+  font-size: 14px;
+  max-width: 50%;
+  margin-bottom: 15px;
+}
